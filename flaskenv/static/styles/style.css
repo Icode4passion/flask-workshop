@@ -1,0 +1,87 @@
+html {
+  background-color: #00539F;
+}
+body {
+  width: 700px;
+  margin: 0 auto;
+  background-color: #FF9500;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+  
+}
+
+#nav{
+	width: 60%;
+	display: inline;
+	text-align: center;
+	 
+}
+
+	#nav ul{}
+		#nav ul li{
+			display: inline-block;
+			height: 62px;
+		}
+			#nav ul li a{
+				padding: 10px;
+				background: orange;
+				color: white;
+			}
+			#nav ul li a:hover{
+				background-color: #ffb424;
+				box-shadow: 0px 1px 1px #666;
+			}
+			#nav ul li a:active{ background-color: #ff8f00; }
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+
+}
+
+input[type=submit] {
+    background-color: #00539F;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #00539E;
+}
+
+.container {
+    border-radius: 5px;
+    background-color:#dfdfdf;
+    padding: 20px;
+}
+
+label {
+  
+  color: black;
+  font-weight: bold;
+  padding: 4px;
+  text-transform: uppercase;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10;
+}			
+
+
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}

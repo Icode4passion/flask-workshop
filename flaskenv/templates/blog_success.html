@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Success</title>
+	<style>
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+</style>
+</head>
+<body>
+	<center>
+		<h3>
+	Data has been inserted Successfully...!!!!!!!!
+</h3>
+<br><br>
+<a href="{{ url_for('blog') }}">Want to Add new Blog</a>
+<br><br>
+	</center>
+
+	</form>
+
+	<table>
+		<thead>
+			<tr>
+				<th>
+					Title
+				</th>
+				<th>
+					Author
+				</th>
+				<th>
+					Blog Content
+				</th>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				{% for data in datas %}	
+			
+			<td>
+				{{data.head}}
+			</td>
+			<td>
+				{{data.author}}
+			</td>
+			<td>
+				<em>{{data.blog}}</em>
+			</td>
+			</tr>
+		</tfoot>
+		{% endfor %}
+	</table>
+
+	<a href="{{ url_for('aboutme') }}">About me</a>
+</body>
+</html>
+
+
+	  
+	
+		
+		
+		
+
+	
+

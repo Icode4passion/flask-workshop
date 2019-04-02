@@ -1,0 +1,52 @@
+{% extends 'index.html'%}
+	{% block content %}
+	<div class="container">
+		<table>
+	  	<thead>
+	  		<tr>
+	  		<th>
+	  			Title
+	  		</th>
+	  		<th>
+	  			Body
+	  		</th>
+	  		<th>
+	  			Author
+	  		</th>
+	  		<th>
+	  			Published date
+	  		</th>
+	  	</tr>
+	  	</thead>
+		<tfoot>
+			<tr>
+				{% for article in articles%}
+				<td>
+					{{ article.title }}
+				</td>
+	  		 	<td>
+	  		 		{{ article.body }}
+	  		 	</td>
+	  		 	<td>
+	  		 		{{ article.author }}
+	  		 	</td>
+	  		 	<td>
+	  		 		{{ article.date }}
+	  		 	</td>
+			</tr>
+				{% endfor %}
+		</tfoot>
+	  	
+	  	
+	  		
+	  		
+	  	
+	  </table>
+	  
+		
+	</div>
+	  
+	 
+
+
+	{% endblock %}

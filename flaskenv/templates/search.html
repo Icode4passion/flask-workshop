@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search</title>
+</head>
+<body>
+	<form action="/search" method=post>
+    <input type=text name=search value="{{ request.form.search}}"></br>
+    <div class="actions"><input type=submit value="Search"></div>
+</form>
+
+{% for r in result %}
+	{{r.head}}<br>
+	{{r.author}}<br>
+	{{r.blog}}<br>
+{% endfor %}
+</div>
+
+</body>
+</html>

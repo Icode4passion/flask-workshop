@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<title>App</title>
+	<link rel="stylesheet" type="text/css" href = "{{ url_for('static',filename='styles/style.css') }}">
+	
+	
+</head>
+<body>
+	<div id = "page">
+		<div id = "logo">
+			<h1><a href="/" id = "logoid">My First App</a></h1>
+		</div>
+
+		<div id = "nav">
+
+			<ul>
+				<!-- <li><a href="{{ url_for('aboutme') }}">About me</a></li> -->
+				<li><a href="{{ url_for('resume') }}">Resume</a></li>
+				<li><a href="{{ url_for('contact') }}">Contact</a></li>
+				<li><a href="{{ url_for('articles') }}">Articles</a></li>
+				<li><a href="{{ url_for('blog') }}">Blog</a></li>			
+				
+			</ul>
+			
+		</div>
+		
+	</div>
+
+
+		
+	 
+	<div>
+		{% block content %}
+		{% endblock %}
+	</div>
+</body>
+
+		 
+	
+</html>
